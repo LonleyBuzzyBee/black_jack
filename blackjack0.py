@@ -34,6 +34,10 @@ def cardScore(card):
   return card_score
   
 # def dealCard():
+def dealCard():
+  cardDrawn = getCard()
+  return displayCard(cardDrawn)
+
 # def deal():
 # def playHand():
 # def results():
@@ -49,8 +53,7 @@ while playing_game.upper() == "Y":
   dealer_score = 0
 
   # player first card
-  player_card = getCard()
-  print("PLAYER was dealt: ", displayCard(player_card))
+  print(f"PLAYER was dealt: {dealCard()}"
   player_score += cardScore(player_card)
 
   # dealer first card
@@ -70,6 +73,51 @@ while playing_game.upper() == "Y":
 
   print(f"PLAYER score = {player_score}")
   print(f"DEALER score = {dealer_score}")
+  
+  # prompt player if they want to hit or stand
+  player_move = input("Player move. Type 'H' to hit or 'S' to stand: " )
+  if player_move == 'H':
+    
+    print(f"PLAYER was dealt: {dealCard()}")
+    player_score += cardScore(player_card)
+    
+# win_vs_lose()
+# if (cases where they would win)
+#   return win as true or return string that p or d wins
+# elif (cases of loses)
+#   return lost
+# else (neither)
+#  then run player_move()
+
+# player_move():
+# prompt = input("H or S": ")
+# if prompt == "H":
+#   run player_turn()
+# if prompt == "S":
+#   run dealers_game()
+
+# dealers_game():
+# if dealer score >= 17:
+#   calculate score of player and dealer and declare winner
+# while dealer score < 17:
+#   dealer hits
+
+
+# player_move()
+# win_vs_loss()
+# if (win or lose)
+#   then just print win_vs_lose
+# elif (hit)
+#  funct for player & dealer turn
+# elif(stay)
+#  don't do anything to score
+
+
+
+  # if "HIT" then drawCard
+  # if "STAND" then pass option to dealer
+  # if "BUST" then do if statement,
+
 
 
   playing_game = input("Would you like to play again? enter Y or N: ")
