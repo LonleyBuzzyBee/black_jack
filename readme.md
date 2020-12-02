@@ -1,6 +1,75 @@
-# blackjack game
+# _Black Jack_
+
+#### _Program for the card game black jack, Version 1.0_
+
+#### By _**Lana and Mai**_
+
+
+## Description
+
+_This is a python program writen to entertain the user, and allow the player_
+
+## Project Specifications
+
+| Behavior | Input | Output |
+|---|---|---|
+|the program prints an introduction, and gives the player an option to play black jack | terminal command: python3 main.py | Welcome to Mai & Lana's Blackjack Game! 🐥, Would you like to play? enter Y or N: |
+|   |   |   |
+|   |   |   |
+
+## Setup/Installation Requirements
+
+_In Terminal:_
+
+* Navigate to where you want this application to be saved, i.e.:
+```cd desktop```
+* Clone the file from GitHub with HTTPS
+```git clone https://github.com/LonleyBuzzyBee/black_jack.git```
+* Open file in your preferred text editor
+* On Mac: ```open -a {your text editor} black_jack```
+* On Windows: ```{your text editor} black_jack```
+
+_To Download Manually:_
+
+* Navigate to https://github.com/LonleyBuzzyBee/black_jack.
+* Click green "Clone or Download" button.
+* Click "Download ZIP".
+* Click downloaded file to unzip.
+* Open folder called "black-jack-master".
+
+
+## Known Bugs
+
+_No known bugs at this time._
+
+## Support and contact details
+
+_Have a bug or an issue with this application? [Open a new issue](https://github.com/kwicz/{repo-name}/issues) here on GitHub._
+
+## Technologies Used
+
+* _Python_
+* _random library_
+
+
+### License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+Copyright (c) 2020 **_Mai and Lana_**
+
+
+
+
+
+
+
+
+
 
 # logic---------------------------------------
+
+# blackjack game
 
 # RULES
 # player and dealer each dealt card
