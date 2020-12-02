@@ -92,16 +92,13 @@ class Game:
   def win_or_lose(self):
     # player wins if player score is greater than dealer score, but player does not "Bust" i.e. score is 21 or below
     if self.p1.score <= 21 and self.p1.score > self.d.score:
-      print(f"PLAYER wins!")
-      return True
+      return f"PLAYER wins!"
     # dealer wins if dealer score is greater than player score, but dealer does not "Bust" i.e. score is 21 or below
     elif self.d.score <= 21 and self.d.score > self.p1.score:
-      print(f"DEALER wins!")
-      return False
+      return f"DEALER wins!"
     # only remaining option is if both player and dealer have equal score, then a tie is declared
     else:
-      print(f"IT'S A TIE YO")
-      return None
+      return f"IT'S A TIE YO"
 
   # this method is called within rest_of_game to run all of the player's future turns after the second turn (after second_turn() method gets called)
   def players_game(self):

@@ -15,6 +15,7 @@ if __name__ == '__main__':
   # ----NEW CODE------
   player_overall_score = 0
   dealer_overall_score = 0
+  games_played = 0
   # ----NEW CODE------
 
   # repeatedly runs the game as long as the player responds "Y" to play again
@@ -30,12 +31,13 @@ if __name__ == '__main__':
     print(newGame.second_turn())
     # runs method for the rest of the game, also checks for winners
     print(newGame.rest_of_game())
-
-    if newGame.win_or_lose():
+    games_played += 1
+    if newGame.win_or_lose() == "PLAYER wins!":
       player_overall_score += 1
-    elif not newGame.win_or_lose():
+    elif newGame.win_or_lose() == "DEALER wins!":
       dealer_overall_score += 1
-    
+
+    print(f"PLAYER overall score: {player_overall_score} out of {games_played}\nDEALER overall score: {dealer_overall_score} out of {games_played}")
 
     # check if player wants to play again
     playing_game = input("Would you like to play again? enter Y or N: ")
